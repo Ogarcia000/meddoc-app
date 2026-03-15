@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "meddoc-app",
+    "name": "MedDoc",
     "slug": "meddoc-app",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -10,20 +10,35 @@
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#F8FAFC"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "MedDoc necesita acceso a la camara para tomar fotos de registros medicos.",
+        "NSPhotoLibraryUsageDescription": "MedDoc necesita acceso a la galeria para adjuntar fotos a registros medicos.",
+        "NSFaceIDUsageDescription": "MedDoc usa Face ID para proteger los datos medicos de tus pacientes."
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#F8FAFC"
       },
       "edgeToEdgeEnabled": true
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-sqlite",
+      "expo-secure-store",
+      [
+        "expo-local-authentication",
+        {
+          "faceIDPermission": "MedDoc usa Face ID para proteger datos medicos."
+        }
+      ]
+    ]
   }
 }
