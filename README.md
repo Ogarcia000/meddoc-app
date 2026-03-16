@@ -2,6 +2,21 @@
 
 Medical documentation app for patient record-keeping and photographic follow-up. Built for healthcare professionals who need a fast, offline-first tool to document consultations on their mobile device.
 
+## Screenshots
+
+<p align="center">
+  <img src="screenshots/Login.png" width="200" alt="Login" />
+  <img src="screenshots/Register.png" width="200" alt="Register" />
+  <img src="screenshots/Dashboard.png" width="200" alt="Dashboard" />
+  <img src="screenshots/ListaPacientes.png" width="200" alt="Patients List" />
+</p>
+<p align="center">
+  <img src="screenshots/DetallesPaciente.png" width="200" alt="Patient Detail" />
+  <img src="screenshots/AgregarPaciente.png" width="200" alt="New Patient" />
+  <img src="screenshots/EditarPaciente.png" width="200" alt="Edit Patient" />
+  <img src="screenshots/Ajustes.png" width="200" alt="Settings" />
+</p>
+
 ## Features
 
 **Authentication & Security**
